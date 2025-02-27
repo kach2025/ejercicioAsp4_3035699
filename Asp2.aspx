@@ -10,7 +10,20 @@
 <body>
     <form id="form1" runat="server">
         <div>
-           
+           <asp:Label runat="server" Font-Bold="true" Text="Use Category Array" /><br />
+                <asp:Table runat="server">
+                   <asp:TableRow>
+                       <asp:TableCell>
+                           <asp:TextBox runat="server" ID="txtIndex" />
+                       </asp:TableCell>
+                   </asp:TableRow>
+                   <asp:TableRow>
+                       <asp:TableCell>
+                           <asp:Button runat="server" ID="btnLookup" OnClick="btnLookup_Click" Text="Lookup" />
+                           <asp:Label runat="server" ID="lblCategory"  />
+                       </asp:TableCell>
+                   </asp:TableRow>
+                </asp:Table>
         </div>
     </form>
 </body>
